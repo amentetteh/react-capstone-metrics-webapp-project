@@ -1,0 +1,19 @@
+html,
+body,
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Helvetica, sans-serif;
+    font-size: 18px;
+    color: red;
+  }
+
+  :root {
+    --dark-blue: #1e3f66;
+    --light-blue: #2e5984;
+    --text-color: #e8f8ff;
+  }
