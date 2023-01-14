@@ -1,7 +1,7 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 
 const GET_AQI_INFOS = 'react-capstone-metrics-webapp-project/redux/airpollution/GET_AQI_INFOS';
-const url = 'http://api.openweathermap.org/data/2.5/air_pollution?';
+const url = 'https://api.openweathermap.org/data/2.5/air_pollution?';
 const initialState = {
   loading: false,
   infos: [],
