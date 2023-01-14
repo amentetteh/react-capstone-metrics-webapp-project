@@ -10,7 +10,7 @@ const initialState = {
 };
 
 export const getAirPollutionInfos = createAsyncThunk(GET_AQI_INFOS, async (geocoord) => {
-  const response = await fetch(`${url}lat=${geocoord[0]}&lon=${geocoord[1]}&appid=3c32e2f88199f0e867f431a64c89a661`);
+  const response = await fetch(`${url}lat=${geocoord[0]}&lon=${geocoord[1]}&appid=${process.env.REACT_APP_TOKEN}`);
   const dt = await response.json();
   const formatedData = {
     aqi: dt.list[0].main.aqi,
