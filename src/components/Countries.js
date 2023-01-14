@@ -1,5 +1,5 @@
-import React, { useEffect } from 'react';
-import { NavLink, useParams } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
+import { NavLink } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import { nanoid } from 'nanoid';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -9,14 +9,20 @@ import { fetchCountries } from '../redux/countries/countriesSlice';
 const Countries = () => {
   const dispatch = useDispatch();
   const countries = useSelector((state) => state.countries.countries);
-  const { id } = useParams();
-  const reg = id ? id.toLowerCase() : 'ame';
-
+  // const { id } = useParams();
+  // const reg = id ? id.toLowerCase() : 'africa';
+  const [region, setRegion] = useState('africa');
   useEffect(() => {
     if (countries.length === 0) {
-      dispatch(fetchCountries(reg));
+      dispatch(fetchCountries(region));
     }
-  }, [dispatch, countries.length, countries.refresh, reg]);
+  }, [dispatch, countries.length, countries.refresh, region]);
+
+  const handleRegionChange = (e) => {
+    e.preventDefault();
+    setRegion(e.target.value.toLowerCase());
+  };
+
   return (
     <div className="country-container">
       {countries.loading && <div className="loading" />}
@@ -31,19 +37,14 @@ const Countries = () => {
           <header>
             {/* <img src={banner} alt="banner" /> */}
             <div className="search-field">
-              <FontAwesomeIcon className="App-backtohome" icon={faSearch} />
-              <input
-                type="search"
-                placeholder="Search Region"
-              />
-              <select name="selected">
-                <option> * </option>
+              <select className="searchField" name="selected" onChange={handleRegionChange} defaultValue={region}>
                 <option value="Asia"> Asia</option>
                 <option value="Oceania">Oceania </option>
                 <option value="Europe"> Europe </option>
                 <option value="Americas"> Americas</option>
                 <option value="Africa"> Africa</option>
               </select>
+              <FontAwesomeIcon className="App-backtohome" icon={faSearch} onClick={() => { dispatch(fetchCountries(region)); }} />
             </div>
           </header>
           <ul className="country-list">
