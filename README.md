@@ -58,7 +58,7 @@ After you're finished please remove all the comments and instructions!
 
 # 📖 react-capstone-metrics-webapp-project <a name="about-project"></a>
 
-> "react-capstone-metrics-webapp-project" is a Single Page App (SPA) website using Air pollution API(air quality data ). It allows users to:
+> "react-capstone-metrics-webapp-project" is a Single Page App (SPA) website using Air pollution [API(air quality data )](https://openweathermap.org/api/air-pollution). It allows users to:
     - Display countries(cities).
     - Display air quality data metrics(details)  .
 
