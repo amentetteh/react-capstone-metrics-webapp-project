@@ -34,8 +34,7 @@ const Countries = () => {
       )}
       {!countries.loading && countries.length && (
         <>
-          <header>
-            {/* <img src={banner} alt="banner" /> */}
+          <header className="filter">
             <div className="search-field">
               <select className="searchField" name="selected" onChange={handleRegionChange} defaultValue={region}>
                 <option value="Asia"> Asia</option>
@@ -44,7 +43,7 @@ const Countries = () => {
                 <option value="Americas"> Americas</option>
                 <option value="Africa"> Africa</option>
               </select>
-              <FontAwesomeIcon className="App-backtohome" icon={faSearch} onClick={() => { dispatch(fetchCountries(region)); }} />
+              <FontAwesomeIcon className="search-button" icon={faSearch} onClick={() => { dispatch(fetchCountries(region)); }} />
             </div>
           </header>
           <ul className="country-list">
@@ -55,10 +54,32 @@ const Countries = () => {
                     country.name.common
                   };${country.altSpellings[0].toLowerCase()};${country.population}`}
                 >
-                  {country.name.common}
-                  {country.capital}
-                  {country.languages.eng}
-                  <img src={country.flags.png} alt="Country Flag" />
+                  <div className="flag">
+                    <img src={country.flags.png} alt="Country Flag" />
+                  </div>
+                  <div className="desc">
+                    <span>
+                      <h2 className="countryName">{ country.name.common }</h2>
+                    </span>
+                    <br />
+                    <span>
+                      City :
+                      { ' ' }
+                      { country.capital }
+                    </span>
+                    <br />
+                    <span>
+                      { country.languages.eng && (<>Lang. :</>)}
+                      { ' ' }
+                      { country.languages.eng }
+                    </span>
+                    { country.languages.eng && (<><br /></>)}
+                    <span>
+                      Pop :
+                      { ' ' }
+                      { country.population }
+                    </span>
+                  </div>
                 </NavLink>
               </li>
             ))}

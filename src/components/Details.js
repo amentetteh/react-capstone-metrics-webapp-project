@@ -27,16 +27,15 @@ function Details() {
       {!loading && data && (
       <>
         <div className="pd-details">
-          <div className="hero">
-            <img src={countryFlag} alt="Flag" />
-            <h2>
-              Country :
+          <div className="top">
+            <img className="details-header-flag" src={countryFlag} alt="Flag" />
+            <h4>
               {countryName}
-            </h2>
-            <h2>
+            </h4>
+            <h4>
               Population :
               {countryPopulation}
-            </h2>
+            </h4>
           </div>
           <div className="details">
             <h2>
@@ -102,7 +101,13 @@ function Details() {
                 <span>{ data.so2 }</span>
               </li>
             </ul>
-            <span>{ airQuality }</span>
+            <div className="airQuality">
+              <span>
+                Air Quality :
+                { ' ' }
+                { airQuality }
+              </span>
+            </div>
           </div>
         </div>
       </>
