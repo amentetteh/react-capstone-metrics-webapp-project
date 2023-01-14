@@ -58,7 +58,7 @@ After you're finished please remove all the comments and instructions!
 
 # 📖 react-capstone-metrics-webapp-project <a name="about-project"></a>
 
-> "react-capstone-metrics-webapp-project" is a Single Page App (SPA) website using Air pollution API(air quality data ). It allows users to:
+> "react-capstone-metrics-webapp-project" is a Single Page App (SPA) website using Air pollution [API(air quality data )](https://openweathermap.org/api/air-pollution). It allows users to:
     - Display countries(cities).
     - Display air quality data metrics(details)  .
 
@@ -111,9 +111,9 @@ After you're finished please remove all the comments and instructions!
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> No yet.
+> 
 
-- [Live Demo Link](https://yourdeployedapplicationlink.com)
+- [Live Demo Link](https://react-capstone-metrics-webapp-project.onrender.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -173,7 +173,7 @@ You can deploy this project using:
 👤 **Amen TETTEH**
 
 - GitHub: [@amentetteh](https://github.com/amentetteh)
-- Twitter: [@twitterhandle]( https://twitter.com/amentetteh)
+- Twitter: [@amentetteh]( https://twitter.com/amentetteh)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/amentetteh)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -213,9 +213,7 @@ If you like this project...
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-> Give credit to everyone who inspired your codebase.
-
-I would like to thank...
+Original design idea by [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio)to thank...
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -223,15 +221,8 @@ I would like to thank...
 
 ## ❓ FAQ <a name="faq"></a>
 
-> Add at least 2 questions new developers would ask when they decide to use your project.
+> Not yet
 
-- **[Question_1]**
-
-  - [Answer_1]
-
-- **[Question_2]**
-
-  - [Answer_2]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
