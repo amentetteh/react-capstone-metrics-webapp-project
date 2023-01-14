@@ -41,7 +41,7 @@ function Details() {
             <h2>
               Air Pollution Details:
             </h2>
-            <ul>
+            <ul className="details-list">
               <li>
                 <span> Carbon monoxide (CO) </span>
                 <span>{ data.co }</span>
