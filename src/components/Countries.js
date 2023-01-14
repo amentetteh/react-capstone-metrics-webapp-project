@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
-import { nanoid } from 'nanoid';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import { fetchCountries } from '../redux/countries/countriesSlice';
@@ -48,7 +47,7 @@ const Countries = () => {
           </header>
           <ul className="country-list">
             {countries.map((country) => (
-              <li className="country-item" key={nanoid()}>
+              <li className="country-item" key={country.population}>
                 <NavLink
                   to={`/pollution/${country.latlng};${
                     country.name.common

@@ -8,7 +8,7 @@ function Details() {
   const dispatch = useDispatch();
   const params = useParams();
   const { infos, loading } = useSelector((state) => state.infos);
-  const paramsArray = params.id.split(';');
+  const paramsArray = (params.id || '').split(';'); // To avoid split apply on undefined during testing
   const cord = paramsArray[0].split(',');
   const countryName = paramsArray[1];
   const countryCode = paramsArray[2];

@@ -10,7 +10,7 @@ function Header() {
         <Link to="/">
           <FontAwesomeIcon className="App-backtohome" icon={faChevronLeft} />
         </Link>
-        <h1>Air Quality</h1>
+        <h1 data-testid="app-title">Air Quality</h1>
       </div>
       <ul className="App-link">
         <li>
