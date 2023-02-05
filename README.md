@@ -19,20 +19,9 @@ REQUIRED SECTIONS:
 - Acknowledgements
 - License
 
-OPTIONAL SECTIONS:
-- FAQ
-
 After you're finished please remove all the comments and instructions!
 -->
 
-<div align="center">
-  <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
-  <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
-  <br/>
-
-  <h3><b>Microverse README Template</b></h3>
-
-</div>
 
 <!-- TABLE OF CONTENTS -->
 
@@ -55,16 +44,18 @@ After you're finished please remove all the comments and instructions!
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
-- [❓ FAQ (OPTIONAL)](#faq)
+- [❓ FAQ](#faq)
 - [📝 License](#license)
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [your_project_name] <a name="about-project"></a>
+# 📖 react-capstone-metrics-webapp-project <a name="about-project"></a>
 
-> Describe your project in 1 or 2 sentences.
+> "react-capstone-metrics-webapp-project" is a Single Page App (SPA) website using Air pollution [API(air quality data )](https://openweathermap.org/api/air-pollution). It allows users to:
+    - Display countries(cities).
+    - Display air quality data metrics(details)  .
 
-**[your_project__name]** is a...
+**react-capstone-metrics-webapp-project** is :
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -75,21 +66,25 @@ After you're finished please remove all the comments and instructions!
 <details>
   <summary>Client</summary>
   <ul>
+    <li><a href="#">CSS3</a></li>
+    <li><a href="#">HTML5</a></li>
+    <li><a href="#">JavaScript</a></li>
     <li><a href="https://reactjs.org/">React.js</a></li>
+    <li><a href="https://redux.js.org/">Redux</a></li>
   </ul>
 </details>
 
 <details>
   <summary>Server</summary>
   <ul>
-    <li><a href="https://expressjs.com/">Express.js</a></li>
+    <li><a href="#">N/A</a></li>
   </ul>
 </details>
 
 <details>
 <summary>Database</summary>
   <ul>
-    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
+    <li><a href="#">N/A</a></li>
   </ul>
 </details>
 
@@ -99,9 +94,9 @@ After you're finished please remove all the comments and instructions!
 
 > Describe between 1-3 key features of the application.
 
-- **[key_feature_1]**
-- **[key_feature_2]**
-- **[key_feature_3]**
+- **Air Pollution histirical data display
+- **Using swippeable card instead of searching fields
+- **Using map instead of flags
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -109,125 +104,81 @@ After you're finished please remove all the comments and instructions!
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Add a link to your deployed project.
+> 
 
-- [Live Demo Link](https://yourdeployedapplicationlink.com)
-
+- [Live Demo Link](https://react-capstone-metrics-webapp-project.onrender.com)
+- [Video Demo Link](https://drive.google.com/file/d/1htZjdJdVbhrmqiYm58MEgxc94GV4Ie7F/view?usp=sharing)
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-> Describe how a new developer could make use of your project.
+> Steps to make use of the project.
 
 To get a local copy up and running, follow these steps.
 
 ### Prerequisites
 
 In order to run this project you need:
-
-<!--
-Example command:
-
-```sh
- gem install rails
-```
- -->
+- node.js
+- git
 
 ### Setup
 
 Clone this repository to your desired folder:
 
-<!--
-Example commands:
+- Open your terminal
 
-```sh
-  cd my-folder
-  git clone git@github.com:myaccount/my-project.git
-```
---->
+- Navigate to the directory where you want to clone the project.
+
+- Clone the project using by running the following command:
+
+`git clone https://github.com/amentetteh/react-capstone-metrics-webapp-project.git`
 
 ### Install
 
-Install this project with:
+Install this project using the following command: 
 
-<!--
-Example command:
-
-```sh
-  cd my-project
-  gem install
-```
---->
+`npm install`.
 
 ### Usage
 
-To run the project, execute the following command:
+To run the project, execute the following commands:
 
-<!--
-Example command:
-
-```sh
-  rails server
-```
---->
+- `npm run build`
+- `npm start`
 
 ### Run tests
 
 To run tests, run the following command:
 
-<!--
-Example command:
-
-```sh
-  bin/rails test test/models/article_test.rb
-```
---->
+`npm test`
 
 ### Deployment
 
 You can deploy this project using:
 
-<!--
-Example:
-
-```sh
-
-```
- -->
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- AUTHORS -->
 
 ## 👥 Authors <a name="authors"></a>
 
-> Mention all of the collaborators of this project.
+👤 **Amen TETTEH**
 
-👤 **Author1**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@amentetteh](https://github.com/amentetteh)
+- Twitter: [@amentetteh]( https://twitter.com/amentetteh)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/amentetteh)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- FUTURE FEATURES -->
-
 ## 🔭 Future Features <a name="future-features"></a>
-
-> Describe 1 - 3 features you will add to the project.
-
-- [ ] **[new_feature_1]**
-- [ ] **[new_feature_2]**
-- [ ] **[new_feature_3]**
+ 
+- [x]  **Setup.**
+- [ ]  **Components.**
+- [ ]  **Events.**
+- [ ]  **Refactor with hooks.**
+- [ ]  **Full website.**
+- [ ]  **Tests (pair programming).**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -255,25 +206,16 @@ If you like this project...
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-> Give credit to everyone who inspired your codebase.
-
-I would like to thank...
+Original design idea by [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio)to thank...
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FAQ (optional) -->
 
-## ❓ FAQ (OPTIONAL) <a name="faq"></a>
+## ❓ FAQ <a name="faq"></a>
 
-> Add at least 2 questions new developers would ask when they decide to use your project.
+> Not yet
 
-- **[Question_1]**
-
-  - [Answer_1]
-
-- **[Question_2]**
-
-  - [Answer_2]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -281,7 +223,7 @@ I would like to thank...
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE) licensed.
+This project is [MIT](./MIT) licensed.
 
 _NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
 

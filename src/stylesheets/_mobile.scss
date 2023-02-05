@@ -1,0 +1,218 @@
+.App {
+  .App-header {
+    background-color: var(--light-blue1);
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    padding: 0.1em 0.5em;
+  }
+
+  .App-header-left {
+    display: flex;
+    gap: 0.5em;
+    align-items: center;
+
+    .App-backtohome {
+      color: white;
+    }
+  }
+
+  .App-link {
+    display: none;
+  }
+
+  .country-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+
+    .filter {
+      height: 180px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+
+      .search-field {
+        width: 70%;
+        align-self: center;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        background-color: white;
+        border-radius: 8px;
+
+        .searchField {
+          font-size: 1.2rem;
+          padding: 8px;
+          outline: none;
+          border-radius: 8px;
+          border: none;
+          width: 100%;
+        }
+
+        .search-button {
+          color: black;
+        }
+      }
+    }
+
+    .country-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 0.5em;
+      width: 100%;
+
+      .country-item {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1em;
+        padding: 1.2em;
+        background-color: var(--light-blue1);
+        border-radius: 10px;
+        max-width: 180px;
+
+        a {
+          text-decoration: none;
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          color: aliceblue;
+
+          .flag {
+            height: 80px;
+
+            img {
+              height: 80px;
+              width: 100%;
+            }
+          }
+        }
+      }
+
+      .country-item:nth-child(even) {
+        background-color: var(--light-blue1);
+      }
+
+      .country-item:nth-child(odd) {
+        background-color: var(--light-blue2);
+      }
+    }
+  }
+}
+
+.loading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+}
+
+.loading::after {
+  content: ' ';
+  display: block;
+  border: 8px solid var(--light-blue1);
+  border-top: 8px solid var(--text-color);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  box-sizing: border-box;
+  animation: spin 1.5s linear infinite;
+}
+
+.pd-details {
+  display: flex;
+  flex-direction: column;
+  justify-items: flex-start;
+  align-items: center;
+  margin: 10px;
+  color: white;
+
+  .top {
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-start;
+    align-items: center;
+
+    h4 {
+      margin-bottom: 0;
+      padding-bottom: 0;
+      margin-top: 8px;
+      padding-top: 8px;
+    }
+
+    .details-header-flag {
+      flex-direction: column;
+      justify-items: flex-start;
+      align-items: center;
+      max-width: 180px;
+      justify-self: center;
+      align-self: center;
+    }
+  }
+
+  .details {
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-start;
+    align-items: center;
+
+    .details-list {
+      display: flex;
+      flex-direction: column;
+      justify-items: flex-start;
+      gap: 0.5em;
+      align-items: stretch;
+      margin: 8px;
+      flex: 0 1 auto;
+
+      li {
+        list-style: none;
+        align-items: center;
+        background-color: var(--light-blue1);
+        border-radius: 8px;
+        display: flex;
+        font-size: 1.2rem;
+        justify-content: space-between;
+        padding: 0.9em 0.6em;
+      }
+
+      li:nth-child(even) {
+        background-color: var(--light-blue1);
+      }
+
+      li:nth-child(odd) {
+        background-color: var(--light-blue2);
+      }
+    }
+
+    .airQuality {
+      color: white;
+      border-radius: 8px;
+      background-color: var(--light-blue1);
+      width: 100%;
+      line-height: 80px;
+      text-align: center;
+      vertical-align: middle;
+      margin-top: 20px;
+      font-size: x-large;
+    }
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
